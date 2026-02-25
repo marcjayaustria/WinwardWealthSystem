@@ -31,18 +31,16 @@ body { background: var(--white); color: #333; line-height: 1.6; overflow-x: hidd
 /* ===== UPDATED NAVBAR (makes it bigger) ===== */
 .top-nav {
     background: var(--white);
-    border-bottom: 1px solid #e5e5e5;
     padding: 4px 0;     /* smaller */
-    font-size: 12px;    /* smaller text */
+    font-size: 15px;    /* smaller text */
+    margin-bottom: 0%;   /* remove gap below */
 }
 
 
 .main-header {
     background: transparent;
     padding: 10px 0 15px 0;
-    /* margin: 0;
-    z-index: 1000;
-    box-shadow: none; */
+    margin-top: 0%; /* remove gap above */
 }
 /* Rounded pill container */
 .main-header nav {
@@ -50,6 +48,7 @@ body { background: var(--white); color: #333; line-height: 1.6; overflow-x: hidd
     max-width: 1400px;
     margin: auto;
     height: 65px;
+    margin-top: 0%;
 
     display: flex;
     align-items: center;
@@ -179,14 +178,9 @@ body { background: var(--white); color: #333; line-height: 1.6; overflow-x: hidd
 .services-section {
     position: relative;
     padding: 120px 0;
-    background: url("image/cbg.jpg") center/cover no-repeat;
+    background: url("image/corebg.jpg") center/cover no-repeat;
 }
 
-.services-bg-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 40, 90, 0.65);
-}
 
 .services-container {
     position: relative;
@@ -206,11 +200,12 @@ body { background: var(--white); color: #333; line-height: 1.6; overflow-x: hidd
     gap: 30px;
     overflow: hidden;
     scroll-behavior: smooth;
+    width: calc((320px * 3) + (30px * 2));
 }
 
 /* Cards */
 .service-card {
-    min-width: 320px;
+    flex: 0 0 320px;
     background: white;
     border-radius: 20px;
     padding: 30px;
@@ -887,4 +882,14 @@ form input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid 
         grid-template-columns: 1fr;
         gap: 40px;
     }
+}
+
+
+/* 
+connect card */
+
+
+.connect-title {
+    display: block;
+    margin: -30px auto 50px auto;
 }
