@@ -9,6 +9,9 @@
 </head>
 <body>
 
+    <!-- ===== STICKY HEADER WRAPPER ===== -->
+<div class="header-wrapper">
+
     <div class="top-nav">
         <div class="container flex-between">
             <span>Pathway to Financial Security & Generational Wealth</span>
@@ -24,15 +27,15 @@
             </div>
             
             <ul class="nav-links" id="nav-menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact Us</a></li>
-                <li class="mobile-only"><a href="javascript:void(0)" class="btn-nav-signup open-modal">Sign Up</a></li>
+                <li class="mobile-only">
+                    <a href="javascript:void(0)" class="btn-nav-signup open-modal">Sign Up</a>
+                </li>
             </ul>
-
-           
 
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -41,6 +44,8 @@
             </div>
         </nav>
     </header>
+
+</div>
 
     <section id="home" class="hero">
         <div class="hero-bg-layer">
@@ -155,6 +160,8 @@
             </div>
         </div>
     </section>
+
+
 <div class="section-divider"></div>
 
     <section id="contact-form-section" class="contact-us-area">
@@ -206,35 +213,66 @@
             </div>
         </div>
     </section>
+
+    
     <div class="section-divider"></div>
 
     <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-grid-main">
-                <div class="contact-col">
-                    <h2 class="section-heading-left gold">Connect With Us</h2>
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>800-533-0538</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>info@winwardwealth.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Office Hours: Mon-Fri 9AM-5PM</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>156 S Spruce Ave #2078, South San Francisco, CA 94080, USA</span>
-                    </div>
+    <div class="container">
+        <h2 class="contact-title">Connect With Us</h2>
+
+        <div class="contact-grid">
+
+            <!-- Phone -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
                 </div>
-
-
+                <h3>Phone Number</h3>
+                <p class="label">Toll Free</p>
+                <p>800-533-0538</p>
+                <p class="label">Phone Number</p>
+                <p>650-239-3224</p>
             </div>
+
+            <!-- Email -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Address</h3>
+                <p class="label">Gmail</p>
+                <p>winwardwealthsystems@gmail.com</p>
+            </div>
+
+            <!-- Office Hours -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Office Hours</h3>
+                <p class="label">Days</p>
+                <p>Monday - Friday</p>
+                <p class="label">Time</p>
+                <p>8 am - 5 pm</p>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card highlight">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Office Location</h3>
+                <p class="label">Address</p>
+                <p>
+                    156 South Spruce Avenue, Suite 2078<br>
+                    South San Francisco, CA 94080
+                </p>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <footer>
         <div class="container footer-grid">
@@ -251,7 +289,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                 </ul>
             </div>
             <div class="f-col">
