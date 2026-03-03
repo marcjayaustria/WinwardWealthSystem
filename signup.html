@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winward Wealth Systems | Financial Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== STICKY HEADER WRAPPER ===== -->
+<div class="header-wrapper">
+
+    <div class="top-nav">
+        <div class="container flex-between">
+            <span>Pathway to Financial Security & Generational Wealth</span>
+            <span>800-533-0538 <i class="fas fa-phone"></i></span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <nav class="container flex-between">
+            <div class="logo">
+                <img src="image/wws logo1.png" alt="Logo" class="logo-img">
+                <span class="logo-text">WINWARD WEALTH SYSTEMS</span>
+            </div>
+            
+           <ul class="nav-links" id="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About Us</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#testimonials">Testimonials</a></li>
+    <li><a href="index.html#contact">Contact Us</a></li>
+    <li>
+         <a href="signup.html" class="btn-nav-signup active">Sign Up</a>
+    </li>
+</ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+</div>
+
+<section class="embedded-signup-area" id="signup">
+
+    <div class="signup-hero-banner">
+        <h1>Sign Up</h1>
+        <div class="signup-inline-form">
+            <span>Sign Up to Receive Rewarding Deals for Any of Our Services</span>
+            <div class="input-wrap">
+                <input type="text" placeholder="Type here...">
+                <button type="submit" class="header-submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="signup-blue-strip">
+        <div class="container">
+            <div class="pill-box-label">Be a Step Ahead in Getting Rewarding Financial Solutions</div>
+            <p>You can get a head start in solving your money matters by filling out and sending us the form below.</p>
+            <p>It puts you closer to getting the rewarding financial solution you need and deserve.</p>
+            <p style="margin-top: 15px;">
+                Or, you can contact us by phone at 
+                <span class="phone-highlight-tag">
+                    1-800-533-0538 
+                    <i class="far fa-copy" style="margin-left: 10px; cursor: pointer;" title="Copy to clipboard"></i>
+                </span> 
+                for immediate assistance
+            </p>
+        </div>
+    </div>
+
+    <div class="signup-body-container">
+        <div class="container">
+            <div class="signup-main-grid">
+                
+                <div class="signup-form-pane">
+                    <div class="step-indicator-wrapper">
+                        <div class="circle-step-node active" id="node-1">1</div>
+                        <div class="step-connecting-line" id="line-1"></div>
+                        <div class="circle-step-node" id="node-2">2</div>
+                        <div class="step-connecting-line" id="line-2"></div>
+                        <div class="circle-step-node" id="node-3">3</div>
+                    </div>
+
+                    <form id="signupForm">
+                        <div class="form-step active" id="step-1">
+                            <div class="signup-input-row">
+                                <div class="signup-input-col">
+                                    <label>Contact Information</label>
+                                    <input type="text" placeholder="Contact information">
+                                </div>
+                            </div>
+
+                            <div class="signup-input-row">
+                                <div class="signup-input-col">
+                                    <label>First Name</label>
+                                    <input type="text" placeholder="First name">
+                                </div>
+                                <div class="signup-input-col">
+                                    <label>Last Name</label>
+                                    <input type="text" placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <div class="signup-input-row">
+                                <div class="signup-input-col">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="Email address">
+                                </div>
+                                <div class="signup-input-col">
+                                    <label>Phone Number</label>
+                                    <div class="phone-input-container">
+                                        <img src="https://flagcdn.com/w40/ph.png" alt="PH Flag">
+                                        <input type="tel" placeholder="9** *** ****">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-form-action-next" onclick="nextStep(2)">Next</button>
+                        </div>
+
+                        <div class="form-step" id="step-2" style="display:none;">
+                            <div class="signup-input-row">
+                                <div class="signup-input-col">
+                                    <label>Street Address</label>
+                                    <input type="text" placeholder="Address line 1">
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <button type="button" class="btn-outline" onclick="nextStep(1)" style="margin-top: 20px;">Back</button>
+                                <button type="button" class="btn-form-action-next" onclick="nextStep(3)">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step-3" style="display:none;">
+                            <div class="signup-input-row">
+                                <div class="signup-input-col">
+                                    <label>Confirm Your Details</label>
+                                    <p>Please review your information before submitting. By clicking complete, you agree to our terms.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <button type="button" class="btn-outline" onclick="nextStep(2)" style="margin-top: 20px;">Back</button>
+                                <button type="submit" class="btn-form-action-next">Complete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="signup-privacy-pane">
+                    <h3>We value and respect your privacy</h3>
+                    <p>Rest assured that the information we receive will only be used by us and for its intended purpose which is to make helping you convenient and a more efficient process.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+   <footer class="premium-footer">
+    <div class="container footer-wrapper">
+
+        <!-- LEFT COLUMN -->
+        <div class="footer-col footer-about">
+            <h3>Follow Winward Wealth Systems on Social Media</h3>
+            <p>
+                We’re passionate about delivering the best possible rewarding results 
+                for any money matters you wish to bring forth a solution or resolution.
+            </p>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- MIDDLE COLUMN -->
+        <div class="footer-col footer-links">
+            <h3>Quick Links</h3>
+
+            <div class="links-grid">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="footer-col footer-feedback">
+            <h3>Feedback</h3>
+
+            <form class="footer-feedback-form">
+                <label>Full Name</label>
+                <input type="text" placeholder="Full name">
+
+                <label>Feedback</label>
+                <textarea placeholder="Feedback"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+    </div>
+
+</footer>
+<div class="footer-bottom-bar">
+    Winward Wealth Systems © Copyright 2025 All Right Reserved
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

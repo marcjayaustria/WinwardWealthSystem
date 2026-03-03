@@ -33,7 +33,9 @@
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact Us</a></li>
                 <li>
-                    <a href="javascript:void(0)" class="btn-nav-signup" onclick="toggleSignup()">Sign Up</a>
+                    <li>
+                            <a href="signup.html" class="btn-nav-signup">Sign Up</a>
+                    </li>
                 </li>
             </ul>
 
@@ -355,123 +357,6 @@
         </div>
     </div>
 </section>
-<section class="embedded-signup-area" id="signup" style="display: none;">
-    <button class="close-signup" onclick="toggleSignup()" style="position: absolute; right: 20px; top: 20px; background: none; border: none; color: white; font-size: 30px; cursor: pointer; z-index: 10;">&times;</button>
-    
-    <div class="signup-hero-banner">
-        <h1>Sign Up</h1>
-        <div class="signup-inline-form">
-            <span>Sign Up to Receive Rewarding Deals for Any of Our Services</span>
-            <div class="input-wrap">
-                <input type="text" placeholder="Type here...">
-                <button type="submit" class="header-submit">Submit</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="signup-blue-strip">
-        <div class="container">
-            <div class="pill-box-label">Be a Step Ahead in Getting Rewarding Financial Solutions</div>
-            <p>You can get a head start in solving your money matters by filling out and sending us the form below.</p>
-            <p>It puts you closer to getting the rewarding financial solution you need and deserve.</p>
-            <p style="margin-top: 15px;">
-                Or, you can contact us by phone at 
-                <span class="phone-highlight-tag">
-                    1-800-533-0538 
-                    <i class="far fa-copy" style="margin-left: 10px; cursor: pointer;" title="Copy to clipboard"></i>
-                </span> 
-                for immediate assistance
-            </p>
-        </div>
-    </div>
-
-    <div class="signup-body-container">
-        <div class="container">
-            <div class="signup-main-grid">
-                
-                <div class="signup-form-pane">
-                    <div class="step-indicator-wrapper">
-                        <div class="circle-step-node active" id="node-1">1</div>
-                        <div class="step-connecting-line" id="line-1"></div>
-                        <div class="circle-step-node" id="node-2">2</div>
-                        <div class="step-connecting-line" id="line-2"></div>
-                        <div class="circle-step-node" id="node-3">3</div>
-                    </div>
-
-                    <form id="signupForm">
-                        <div class="form-step active" id="step-1">
-                            <div class="signup-input-row">
-                                <div class="signup-input-col">
-                                    <label>Contact Information</label>
-                                    <input type="text" placeholder="Contact information">
-                                </div>
-                            </div>
-
-                            <div class="signup-input-row">
-                                <div class="signup-input-col">
-                                    <label>First Name</label>
-                                    <input type="text" placeholder="First name">
-                                </div>
-                                <div class="signup-input-col">
-                                    <label>Last Name</label>
-                                    <input type="text" placeholder="Last name">
-                                </div>
-                            </div>
-
-                            <div class="signup-input-row">
-                                <div class="signup-input-col">
-                                    <label>Email Address</label>
-                                    <input type="email" placeholder="Email address">
-                                </div>
-                                <div class="signup-input-col">
-                                    <label>Phone Number</label>
-                                    <div class="phone-input-container">
-                                        <img src="https://flagcdn.com/w40/ph.png" alt="PH Flag">
-                                        <input type="tel" placeholder="9** *** ****">
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-form-action-next" onclick="nextStep(2)">Next</button>
-                        </div>
-
-                        <div class="form-step" id="step-2" style="display:none;">
-                            <div class="signup-input-row">
-                                <div class="signup-input-col">
-                                    <label>Street Address</label>
-                                    <input type="text" placeholder="Address line 1">
-                                </div>
-                            </div>
-                            <div style="display: flex; justify-content: space-between;">
-                                <button type="button" class="btn-outline" onclick="nextStep(1)" style="margin-top: 20px;">Back</button>
-                                <button type="button" class="btn-form-action-next" onclick="nextStep(3)">Next</button>
-                            </div>
-                        </div>
-
-                        <div class="form-step" id="step-3" style="display:none;">
-                            <div class="signup-input-row">
-                                <div class="signup-input-col">
-                                    <label>Confirm Your Details</label>
-                                    <p>Please review your information before submitting. By clicking complete, you agree to our terms.</p>
-                                </div>
-                            </div>
-                            <div style="display: flex; justify-content: space-between;">
-                                <button type="button" class="btn-outline" onclick="nextStep(2)" style="margin-top: 20px;">Back</button>
-                                <button type="submit" class="btn-form-action-next">Complete</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="signup-privacy-pane">
-                    <h3>We value and respect your privacy</h3>
-                    <p>Rest assured that the information we receive will only be used by us and for its intended purpose which is to make helping you convenient and a more efficient process.</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
    <footer class="premium-footer">
     <div class="container footer-wrapper">
 

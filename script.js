@@ -159,23 +159,23 @@ function nextStep(stepNumber) {
         }
     });
 }
-function toggleSignup() {
-    const signupSection = document.getElementById('signup');
+// function toggleSignup() {
+//     const signupSection = document.getElementById('signup');
     
-    // Check if the section is currently hidden
-    if (signupSection.style.display === "none" || signupSection.style.display === "") {
-        // Show the section
-        signupSection.style.display = "block";
-        signupSection.classList.add('show-signup');
+//     // Check if the section is currently hidden
+//     if (signupSection.style.display === "none" || signupSection.style.display === "") {
+//         // Show the section
+//         signupSection.style.display = "block";
+//         signupSection.classList.add('show-signup');
         
-        // Scroll to the section smoothly
-        signupSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-        // Optional: Hide it again if they click "Sign Up" while it's already open
-        signupSection.style.display = "none";
-        signupSection.classList.remove('show-signup');
-    }
-}
+//         // Scroll to the section smoothly
+//         signupSection.scrollIntoView({ behavior: 'smooth' });
+//     } else {
+//         // Optional: Hide it again if they click "Sign Up" while it's already open
+//         signupSection.style.display = "none";
+//         signupSection.classList.remove('show-signup');
+//     }
+// }
 
 // Logic for the 1-2-3 Functional Steps
 function nextStep(stepNumber) {
