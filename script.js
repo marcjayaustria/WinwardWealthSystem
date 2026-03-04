@@ -3,24 +3,7 @@
    ============================================================ */
 
 // 1. MOBILE MENU (HAMBURGER) LOGIC
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
 
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    
-    const bars = hamburger.querySelectorAll('.bar');
-    // Simple transform for hamburger to X animation
-    if (navMenu.classList.contains('active')) {
-        bars[0].style.transform = 'rotate(45deg) translate(5px, 6px)';
-        bars[1].style.opacity = '0';
-        bars[2].style.transform = 'rotate(-45deg) translate(5px, -6px)';
-    } else {
-        bars[0].style.transform = 'none';
-        bars[1].style.opacity = '1';
-        bars[2].style.transform = 'none';
-    }
-});
 
 // Close mobile menu when a link is clicked
 document.querySelectorAll('.nav-links a').forEach(link => {
@@ -29,7 +12,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
 // 2. SCROLL SPY (ACTIVE NAVIGATION LINKS)
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-links a");
