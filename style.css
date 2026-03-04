@@ -21,7 +21,7 @@ html, body {
     --gray: #f4f7f6;
 }
 
-* { margin:0; padding:0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+* { margin:0; padding:0; box-sizing: border-box; font-family: cambria; }
 html { scroll-behavior: smooth; }
 body { background: var(--white); color: #333; line-height: 1.6; overflow-x: hidden; }
 .container { width: 90%; max-width: 1200px; margin: auto; }
@@ -1296,3 +1296,4 @@ connect card */
 
 
 }
+
